@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://h72gw64l2xbs"
-path="res://.godot/imported/Oxygen-Light.ttf-6f9eacc4a2b70570135b1b2ca0e92bd3.fontdata"
+uid="uid://db57adne3h5pv"
+path="res://.godot/imported/Oxygen-Regular.ttf-3c8930ecd7161b2822457edb658cfdaa.fontdata"
 
 [deps]
 
-source_file="res://addons/godot-console/fonts/oxygen/Oxygen-Light.ttf"
-dest_files=["res://.godot/imported/Oxygen-Light.ttf-6f9eacc4a2b70570135b1b2ca0e92bd3.fontdata"]
+source_file="res://addons/godot_console/fonts/oxygen/Oxygen-Regular.ttf"
+dest_files=["res://.godot/imported/Oxygen-Regular.ttf-3c8930ecd7161b2822457edb658cfdaa.fontdata"]
 
 [params]
 

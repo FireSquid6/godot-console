@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dvo1qfhac8vo1"
-path="res://.godot/imported/SpaceMono-Italic.ttf-5e49fcdb060b4666b4d0f26bf53cc3f5.fontdata"
+uid="uid://h72gw64l2xbs"
+path="res://.godot/imported/Oxygen-Light.ttf-c584b8f073b0032640cafbd170744407.fontdata"
 
 [deps]
 
-source_file="res://addons/godot-console/fonts/space_mono/SpaceMono-Italic.ttf"
-dest_files=["res://.godot/imported/SpaceMono-Italic.ttf-5e49fcdb060b4666b4d0f26bf53cc3f5.fontdata"]
+source_file="res://addons/godot_console/fonts/oxygen/Oxygen-Light.ttf"
+dest_files=["res://.godot/imported/Oxygen-Light.ttf-c584b8f073b0032640cafbd170744407.fontdata"]
 
 [params]
 

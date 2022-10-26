@@ -1,0 +1,100 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxj6bkg3ukoon"]
+
+[ext_resource type="Script" path="res://addons/godot_console/debug_console.gd" id="1_6pp4s"]
+[ext_resource type="Script" path="res://addons/godot_console/packs/default.gd" id="2_0kxxq"]
+[ext_resource type="Theme" uid="uid://ceho745cqt586" path="res://addons/godot_console/console.tres" id="2_o26mh"]
+
+[sub_resource type="Resource" id="Resource_0qbfj"]
+script = ExtResource("2_0kxxq")
+
+[node name="DebugConsole" type="CanvasLayer"]
+layer = 20
+script = ExtResource("1_6pp4s")
+command_packs = [SubResource("Resource_0qbfj")]
+
+[node name="DebugConsole" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_o26mh")
+
+[node name="Panel" type="Panel" parent="DebugConsole"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 312.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme = ExtResource("2_o26mh")
+
+[node name="VBoxContainer" type="Control" parent="DebugConsole/Panel"]
+layout_mode = 1
+anchor_top = -0.976
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 320.128
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_o26mh")
+
+[node name="Body" type="RichTextLabel" parent="DebugConsole/Panel/VBoxContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -18.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+focus_mode = 2
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+theme = ExtResource("2_o26mh")
+bbcode_enabled = true
+scroll_following = true
+selection_enabled = true
+
+[node name="Edit" type="RichTextLabel" parent="DebugConsole/Panel/VBoxContainer"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -56.0
+offset_right = -18.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 10
+mouse_filter = 2
+theme = ExtResource("2_o26mh")
+bbcode_enabled = true
+text = "[color=gray]Enter command. . . [/color]"
+fit_content_height = true
+autowrap_mode = 0
+
+[node name="LineEdit" type="LineEdit" parent="DebugConsole/Panel/VBoxContainer/Edit"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_o26mh")
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+max_length = 50
+caret_blink = true
+metadata/_edit_lock_ = true
+
+[connection signal="text_changed" from="DebugConsole/Panel/VBoxContainer/Edit/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="text_submitted" from="DebugConsole/Panel/VBoxContainer/Edit/LineEdit" to="." method="_on_line_edit_text_submitted"]

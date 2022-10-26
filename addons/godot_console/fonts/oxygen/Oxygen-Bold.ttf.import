@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c13p0rq5k801e"
-path="res://.godot/imported/SpaceMono-Regular.ttf-64b356155e21ad9e88059760102030d9.fontdata"
+uid="uid://bmv83t0rtvfvl"
+path="res://.godot/imported/Oxygen-Bold.ttf-bdf3b5f87a4f78df7a76658d1a57a15c.fontdata"
 
 [deps]
 
-source_file="res://addons/godot-console/fonts/space_mono/SpaceMono-Regular.ttf"
-dest_files=["res://.godot/imported/SpaceMono-Regular.ttf-64b356155e21ad9e88059760102030d9.fontdata"]
+source_file="res://addons/godot_console/fonts/oxygen/Oxygen-Bold.ttf"
+dest_files=["res://.godot/imported/Oxygen-Bold.ttf-bdf3b5f87a4f78df7a76658d1a57a15c.fontdata"]
 
 [params]
 

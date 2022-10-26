@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dbcufdmfqolmv"
-path="res://.godot/imported/OxygenMono-Regular.ttf-02e989a9a0fc4ca071e807e8121b7e57.fontdata"
+path="res://.godot/imported/OxygenMono-Regular.ttf-a6ff8073088b89b8c08b24acf74593ab.fontdata"
 
 [deps]
 
-source_file="res://addons/godot-console/fonts/oxygen/OxygenMono-Regular.ttf"
-dest_files=["res://.godot/imported/OxygenMono-Regular.ttf-02e989a9a0fc4ca071e807e8121b7e57.fontdata"]
+source_file="res://addons/godot_console/fonts/oxygen/OxygenMono-Regular.ttf"
+dest_files=["res://.godot/imported/OxygenMono-Regular.ttf-a6ff8073088b89b8c08b24acf74593ab.fontdata"]
 
 [params]
 

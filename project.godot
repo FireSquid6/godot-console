@@ -12,26 +12,29 @@ _global_script_classes=[{
 "base": "Resource",
 "class": &"CommandPack",
 "language": &"GDScript",
-"path": "res://addons/godot-console/command_pack.gd"
+"path": "res://addons/godot_console/command_pack.gd"
 }, {
 "base": "CommandPack",
 "class": &"DefaultPack",
 "language": &"GDScript",
-"path": "res://addons/godot-console/packs/default.gd"
-}, {
-"base": "CommandPack",
-"class": &"TeleorbPack",
-"language": &"GDScript",
-"path": "res://addons/godot-console/packs/teleorb.gd"
+"path": "res://addons/godot_console/packs/default.gd"
 }]
 _global_script_class_icons={
 "CommandPack": "",
-"DefaultPack": "",
-"TeleorbPack": ""
+"DefaultPack": ""
 }
 
 [application]
 
 config/name="Godot-console"
+run/main_scene="res://example (DO NOT IMPORT)/cool_game.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Console="*res://addons/godot_console/debug_console.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_console/plugin.cfg")

@@ -1,0 +1,45 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://ceho745cqt586"]
+
+[ext_resource type="FontFile" uid="uid://c13p0rq5k801e" path="res://addons/godot_console/fonts/space_mono/SpaceMono-Regular.ttf" id="1_73885"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvpuy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8y0u1"]
+content_margin_left = 4.0
+content_margin_top = 0.0
+content_margin_right = 4.0
+content_margin_bottom = 0.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a6pea"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eibip"]
+bg_color = Color(0.96364, 0.402153, 0, 0.392157)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.67451, 0.352941, 0.0901961, 0.470588)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hh3qe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pephv"]
+content_margin_left = 4.0
+content_margin_top = 6.0
+content_margin_right = 4.0
+content_margin_bottom = 2.0
+bg_color = Color(0.219608, 0.101961, 0.00784314, 0.776471)
+
+[resource]
+LineEdit/font_sizes/font_size = 16
+LineEdit/fonts/font = ExtResource("1_73885")
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_yvpuy")
+LineEdit/styles/normal = SubResource("StyleBoxEmpty_8y0u1")
+LineEdit/styles/read_only = SubResource("StyleBoxEmpty_a6pea")
+Panel/styles/panel = SubResource("StyleBoxFlat_eibip")
+RichTextLabel/fonts/normal_font = ExtResource("1_73885")
+RichTextLabel/styles/focus = SubResource("StyleBoxEmpty_hh3qe")
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_pephv")

@@ -119,9 +119,10 @@ func add_command(command: Dictionary) -> void:
 
 
 func _on_line_edit_text_submitted(new_text):
-	output(run_command(new_text))
-	edit.text = ''
-	_on_line_edit_text_changed('')
+	if new_text != '':
+		output(run_command(new_text))
+		edit.text = ''
+		_on_line_edit_text_changed('')
 
 
 func _on_line_edit_text_changed(new_text: String):
@@ -161,15 +162,9 @@ func fatal_error(reason: String) -> void:
 	var filename := 'user://crash_report.txt'
 	var file: FileAccess = FileAccess.open(filename, FileAccess.WRITE)
 	if FileAccess.get_open_error() == OK:
-		file.store_string("""
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-Teleorb has encountered a fatal error. Please create an issue at https://github.com/FireSquid6/teleorb/issues or email jdeiss06@gmail.com with this error log.
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Note: the following is in BBCode. Parse it with something like http://patorjk.com/bbcode-previewer/.
-[wave amp=50 freq=2][rainbow freq=0.2 sat=10 val=20]I'm going to kill myself :D[/rainbow][/wave]""")
 		file.store_string(console_text)
 		file = null
 		
-	# go to crash scene
-	get_tree().change_scene_to_file("res://scenes/crash/crash_scene.tscn")
+	# Alert OS
+	OS.alert('Oopsie! The game has crashed', 'This game encountered a fatal error.')
+	get_tree().quit()

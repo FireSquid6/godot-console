@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bnmu15d3uxv1"
-path="res://.godot/imported/SpaceMono-BoldItalic.ttf-4e7bead98c8e77044bb0bd1327d83d60.fontdata"
+uid="uid://c0hnkdlootidw"
+path="res://.godot/imported/SpaceMono-Bold.ttf-dc9bab573d8ccdedb363661ee1887601.fontdata"
 
 [deps]
 
-source_file="res://addons/godot-console/fonts/space_mono/SpaceMono-BoldItalic.ttf"
-dest_files=["res://.godot/imported/SpaceMono-BoldItalic.ttf-4e7bead98c8e77044bb0bd1327d83d60.fontdata"]
+source_file="res://addons/godot_console/fonts/space_mono/SpaceMono-Bold.ttf"
+dest_files=["res://.godot/imported/SpaceMono-Bold.ttf-dc9bab573d8ccdedb363661ee1887601.fontdata"]
 
 [params]
 
